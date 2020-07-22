@@ -1,0 +1,26 @@
+[
+   {
+      "id": 1,
+      "name": "Jack Daniel",
+      "price": 35,
+      "stock": 47,
+      "description": "Very good drink to enjoy with friends.",
+      "image": "https://one-and-only.herokuapp.com/_uploads/photos/jack_daniel_1.jpg"
+   },
+   {
+      "id": 2,
+      "name": "jagermeister 70 cl",
+      "price": 28,
+      "stock": 74,
+      "description": "Made with 56 botanical herbs to enjoy .",
+      "image": "https://one-and-only.herokuapp.com/_uploads/photos/jagermeister_1.jpg"
+   },
+   {
+      "id": 4,
+      "name": "Smirnoff 70cl",
+      "price": 21,
+      "stock": 44,
+      "description": "Famous Vodka to chill with friends.",
+      "image": "http://127.0.0.1:5000/_uploads/photos/smirnoff_1.jpg"
+   }
+]

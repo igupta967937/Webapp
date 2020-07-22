@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Add New Product | Trendy Fashion Store{% endblock %}
+
+{% block body %}
+<div class="row pad">
+	<div class="col-lg-12">
+		<h2 class="bold text-center">Delete Product From The Inventory</h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-10 col-lg-offset-1">
+		<div class="panel panel-default">
+			<form method="POST" action="{{ url_for('delete') }}" enctype="multipart/form-data">
+				<div class="panel-body">
+					<div class="row">
+						{{ form.csrf_token }}
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label>Product Name</label>
+								{{ form.name(class='form-control') }}
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-footer">
+					<button type="submit" class="btn btn-primary">
+						<i class="glyphicon glyphicon-plus-sign"></i> Delete Product
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}

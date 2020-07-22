@@ -1,0 +1,23 @@
+{% extends "base0.html" %}
+{% block content %}
+<div class="jumbotron">
+  {% if current_user.is_authenticated %}
+    <h2><p>Hi {{ current_user.username.title() }}!</p></h2>
+    <br>
+    <br>
+    <br>
+    <h3>Please click on the <u>Product Tab</u> to view the list of available products.</h3>
+    <form method="post">
+    <div class="form-group">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      {{ form.submit(class="btn btn-outline-info") }}
+    </div>
+    </form>
+  {% else %}
+    <p>Welcome.</p>
+    <p>Please login or register!</p>
+  {% endif %}
+</div>
+
+{% endblock %}
